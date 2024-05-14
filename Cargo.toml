@@ -1,0 +1,8 @@
+[package]
+name = "pixelutil-image"
+version = "0.1.0"
+edition = "2021"
+description = "Pixel utilities for image-rs crate"
+
+[dependencies]
+image = { version = "0.25.1", default-features = false }
