@@ -223,7 +223,7 @@ mod tests {
     }
 
     #[test]
-    fn test_coordinate_trait_usage() {
+    fn coordinate_trait_usage() {
         let image = GrayImage::from_vec(2, 2, vec![32, 64, 128, 255]).unwrap();
 
         // Test with tuple coordinates
@@ -246,7 +246,7 @@ mod tests {
 
     #[cfg(feature = "nalgebra")]
     #[test]
-    fn test_nalgebra_point_usage() {
+    fn nalgebra_point_usage() {
         use nalgebra::Point2;
 
         let image = GrayImage::from_vec(2, 2, vec![32, 64, 128, 255]).unwrap();
