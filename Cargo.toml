@@ -1,10 +1,11 @@
 [package]
 name = "pixelutil-image"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 description = "Pixel utilities for image-rs crate"
 authors = ["Rostyslav Bohomaz <rostyslav.db@gmail.com>"]
 license = "MIT"
+repository = "https://github.com/rostyq/pixelutil-image-rs"
 
 [dependencies]
 image = { version = "0.25", default-features = false }
