@@ -252,8 +252,8 @@ mod tests {
         let image = GrayImage::from_vec(2, 2, vec![32, 64, 128, 255]).unwrap();
 
         let point = Point2::new(0i32, 1i32);
-        assert!(image.within_bounds(point));
-        assert_eq!(image.get_pixel_at(point).unwrap(), Luma([128]));
+        assert!(image.within_bounds(*point));
+        assert_eq!(image.get_pixel_at(*point).unwrap(), Luma([128]));
 
         let out_of_bounds_point = Point2::new(-1i32, -1i32);
         assert!(!image.within_bounds(out_of_bounds_point));

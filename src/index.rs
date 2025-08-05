@@ -1,6 +1,6 @@
 /// Provides methods for converting a type to image axis index
 /// used for locating pixels in an image.
-pub trait ImageAxisIndex {
+pub trait ImageAxisIndex: Copy {
     /// Converts the value to an image axis index, returning [`None`] if the conversion fails.
     fn to_image_axis_index(self) -> Option<u32>;
     /// Clamps the value to a valid image axis index within the bounds of the image corresponding axis.
