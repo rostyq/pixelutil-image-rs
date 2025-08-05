@@ -1,10 +1,14 @@
 [package]
 name = "pixelutil-image"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Pixel utilities for image-rs crate"
 authors = ["Rostyslav Bohomaz <rostyslav.db@gmail.com>"]
 license = "MIT"
 
 [dependencies]
-image = { version = "0.25.1", default-features = false }
+image = { version = "0.25", default-features = false }
+nalgebra = { version = "0.34", optional = true }
+
+[features]
+nalgebra = ["dep:nalgebra"]
